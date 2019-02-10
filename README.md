@@ -1,28 +1,29 @@
 Steps followed
 
-1. I have read the filecontents, with UTF 8 encoding inorder to parse currency symbols.
-2. Split the contents of file, assuming each packaging record in each line, and value before ':' as the max allowed weight.
-3. While reading the contents, created an object(PackageDetail) that has weight, index and cost of package. Applied given constraints
-Max weight that a package can take is ? 100
-Max weight and cost of an item is ? 100
-4. Created a PackageCostComparator class(that implements Comparator)to sort the list of itemses as per cost(maximum cost being the top value in list)
-Also added additional sort constraint to a package which weights less in	case there is more than	one	package	with the same price.
-5. Created a class that takes input as maxAllowed weight and the list of Packagedetails to be choosen for shipping.
-This class has a method which filters the best package/packages to be shipped.
-6. The result is appended to a string buffer.
+The system shall generate an invoice for a basket of items being purchased.
+2. The invoice shall list each order in separate invoice lines displaying the following information.
+a. Item name
+b. Item quantity
+c. Tariff
+d. Subtotal
+3. The invoice shall contain the total price.
+4. The system shall support different pricing models defined by human-readable rules.
+5. Input to the system will be a CSV file, each line will have the following format:
+item_name, quantity
+6. Output from the system should be a CSV file containing the invoice:
+One invoice line per row: item_name, item_quantity, tariff, subtotal
+Final row: total
 
-Additional details.
-APIException is thrown, in case if file has invalid values.
-
-Testing
-
-Note: the files used for testing are added under src/test/resources folder. While testing the absolete path of these files is to be given in respective testcases.
-
-Created following test cases.
-1. Test that checks if the output is as expected, as per the given challenge.
-2. Test that checks if the file is found, which throws fileNotFound exception.
-3. Test that checks if the input format is correct, throws APIException if not correct.
-4. Test that checks if the result has any indexes, when data having weight >100 is supplied.
-5. Test that checks if the result has any indexes, when data having weight >100 is supplied.
-6. Test that sends a package which	weighs	less in	case there is more than	one	package	with the same price
+Technical details
+•	Create an interface and expose a method that triggers billing.
+•	In the implementation class, this method should read the input file.
+•	Set the contents of each line to a model class having the name of the item, quantity, price of each item and the total price of all such items.
+•	Once the model class is set with the data(item name, quantity) from the input file, prepare the drools session.
+•	Set the global variable in the rules file by reading the standard initial prices from the properties file.
+•	Pass the list of model class items to drools.
+•	Drools file rules should handle the following
+o	Determine the price of each item based on the type of item and the quantity. Refer to Billing System price calculation illustration.
+o	Once the price is identified then set the total amount of each item cost.
+o	Implement a rule that sums up the total cost of each item.
+•	Once the price is calculated generate the details of each item, quantity, price of each item, total price of the items. In the end of file, add the total cost of all the items in the input file.
 
