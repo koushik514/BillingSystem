@@ -1,0 +1,77 @@
+import com.billingsystem.Item;
+import com.billingsystem.ItemTotal;
+
+import java.lang.Double;
+
+global Double bluePen_lessQuantity_price;
+global Double redPen_lessQuantity_price;
+global Double bluePen_moreQuantity_price;
+global Double redPen_moreQuantity_price;
+
+rule "Blue Pen lessQuantity"
+dialect "java"
+no-loop true
+
+when
+    $item : Item(itemName == 'Blue Pen',$quantity : quantity <= 10)
+
+then
+    $item.setTarrif(bluePen_lessQuantity_price);
+    $item.setTotalPrice( $quantity*bluePen_lessQuantity_price);
+    update( $item);
+
+end
+
+rule "Blue Pen More quantity"
+dialect "java"
+no-loop true
+
+when
+    $item : Item(itemName == 'Blue Pen',$quantity : quantity > 10)
+
+then
+    $item.setTarrif(bluePen_moreQuantity_price);
+    $item.setTotalPrice($quantity*bluePen_moreQuantity_price);
+    update( $item);
+end
+
+rule "Red Pen lessQuantity"
+dialect "java"
+no-loop true
+
+when
+    $item : Item(itemName == 'Red Pen',$quantity : quantity <= 10 )
+
+then
+    $item.setTarrif(redPen_lessQuantity_price);
+    $item.setTotalPrice($quantity*redPen_lessQuantity_price);
+    update( $item);
+end
+
+rule "Red Pen More quantity"
+dialect "java"
+no-loop true
+
+when
+    $item : Item(itemName == 'Red Pen',$quantity : quantity > 10)
+
+then
+    $item.setTarrif(redPen_moreQuantity_price);
+    $item.setTotalPrice( $quantity*redPen_moreQuantity_price);
+    update( $item);
+end
+
+rule "Sum of all items"
+dialect "java"
+no-loop true
+
+when
+    $itemTotal : ItemTotal($totalPriceOfTheOrder :totalPriceOfTheOrder);
+    $item : Item($totalPrice :totalPrice)
+
+then
+    $totalPriceOfTheOrder = $totalPriceOfTheOrder + $totalPrice;
+    $itemTotal.setTotalPriceOfTheOrder($totalPriceOfTheOrder);
+    update( $itemTotal);
+end
+

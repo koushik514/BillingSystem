@@ -1,0 +1,77 @@
+
+Œsquid:S1319["pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(õÖüµşÿÿÿÿ
+t"squid:LeftCurlyBraceStartLineCheck"AMove this left curly brace to the beginning of next line of code.(‘Ö«ìúÿÿÿÿ
+o"squid:LeftCurlyBraceStartLineCheck"AMove this left curly brace to the beginning of next line of code.(üŸ©¹
+t"squid:LeftCurlyBraceStartLineCheck!"AMove this left curly brace to the beginning of next line of code.(¡»¢üùÿÿÿÿ
+o"squid:LeftCurlyBraceStartLineCheck1"AMove this left curly brace to the beginning of next line of code.(Úîø›
+n"squid:LeftCurlyBraceStartLineCheck'"AMove this left curly brace to the beginning of next line of code.(¿ıÑW
+o"squid:LeftCurlyBraceStartLineCheck/"AMove this left curly brace to the beginning of next line of code.(”ı¾
+t"squid:LeftCurlyBraceStartLineCheck6"AMove this left curly brace to the beginning of next line of code.(â’ú„ûÿÿÿÿ
+o"squid:LeftCurlyBraceStartLineCheck<"AMove this left curly brace to the beginning of next line of code.(¿“ç
+t"squid:LeftCurlyBraceStartLineCheck="AMove this left curly brace to the beginning of next line of code.(¡»¢üùÿÿÿÿ
+n"squid:LeftCurlyBraceStartLineCheckJ"AMove this left curly brace to the beginning of next line of code.(Ì³í
+o"squid:LeftCurlyBraceStartLineCheckR"AMove this left curly brace to the beginning of next line of code.(”ı¾
+t"squid:LeftCurlyBraceStartLineCheck["AMove this left curly brace to the beginning of next line of code.(õÖüµşÿÿÿÿ
+t"squid:LeftCurlyBraceStartLineCheck_"AMove this left curly brace to the beginning of next line of code.(¡»¢üùÿÿÿÿ
+o"squid:LeftCurlyBraceStartLineChecko"AMove this left curly brace to the beginning of next line of code.(Úîø›
+t"squid:LeftCurlyBraceStartLineCheckb"AMove this left curly brace to the beginning of next line of code.(Ç½Œâıÿÿÿÿ
+t"squid:LeftCurlyBraceStartLineChecke"AMove this left curly brace to the beginning of next line of code.(²Õ¯ûÿÿÿÿ
+o"squid:LeftCurlyBraceStartLineCheckk"AMove this left curly brace to the beginning of next line of code.(‹±ÃÆ
+o"squid:LeftCurlyBraceStartLineCheckm"AMove this left curly brace to the beginning of next line of code.(ï­£Ä
+t"squid:LeftCurlyBraceStartLineCheckp"AMove this left curly brace to the beginning of next line of code.(¦†âÿøÿÿÿÿ
+t"squid:LeftCurlyBraceStartLineCheckq"AMove this left curly brace to the beginning of next line of code.(¡»¢üùÿÿÿÿ
+o"squid:LeftCurlyBraceStartLineChecks"AMove this left curly brace to the beginning of next line of code.(ï­£Ä
+t"squid:LeftCurlyBraceStartLineCheck}"AMove this left curly brace to the beginning of next line of code.(Í†¬ ûÿÿÿÿ
+u"squid:LeftCurlyBraceStartLineCheck"AMove this left curly brace to the beginning of next line of code.(§İÕñşÿÿÿÿ
+Ksquid:EmptyStatementUsageCheckT"Remove this empty statement.(Åñ­õşÿÿÿÿ
+©%squid:RedundantThrowsDeclarationCheck"xRemove the declaration of thrown exception 'java.io.FileNotFoundException' which is a subclass of 'java.io.IOException'.(üŸ©¹
+p2squid:RightCurlyBraceDifferentLineAsNextBlockCheck/"2Move this "catch" keyword to a new dedicated line.(”ı¾
+r2squid:RightCurlyBraceDifferentLineAsNextBlockCheck1"4Move this "finally" keyword to a new dedicated line.(Úîø›
+p2squid:RightCurlyBraceDifferentLineAsNextBlockCheckR"2Move this "catch" keyword to a new dedicated line.(”ı¾
+p2squid:RightCurlyBraceDifferentLineAsNextBlockCheckk"2Move this "catch" keyword to a new dedicated line.(‹±ÃÆ
+p2squid:RightCurlyBraceDifferentLineAsNextBlockCheckm"2Move this "catch" keyword to a new dedicated line.(ï­£Ä
+r2squid:RightCurlyBraceDifferentLineAsNextBlockChecko"4Move this "finally" keyword to a new dedicated line.(Úîø›
+p2squid:RightCurlyBraceDifferentLineAsNextBlockChecks"2Move this "catch" keyword to a new dedicated line.(ï­£Ä
+|squid:S3008"eRename this field "bluePen_lessQuantity_price" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ú¯Ä†
+{squid:S3008"dRename this field "redPen_lessQuantity_price" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÏİŠ§
+squid:S3008"eRename this field "bluePen_moreQuantity_price" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òç‰úøÿÿÿÿ
+{squid:S3008"dRename this field "redPen_moreQuantity_price" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘ÿòë
+usquid:S2293\"YReplace the type specification in this constructor call with the diamond operator ("<>").(ô‡¾íûÿÿÿÿ
+Fsquid:S2093!"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
+Fsquid:S2093_"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
+T
+squid:S106."9Replace this use of System.out or System.err by a logger.(İ«à­şÿÿÿÿ
+T
+squid:S106I"9Replace this use of System.out or System.err by a logger.(ñ®ë‚şÿÿÿÿ
+T
+squid:S106K"9Replace this use of System.out or System.err by a logger.(ã…÷”øÿÿÿÿ
+N
+squid:S106Q"9Replace this use of System.out or System.err by a logger.(ºë`
+T
+squid:S106d"9Replace this use of System.out or System.err by a logger.(É÷“äüÿÿÿÿ
+h
+squid:S109"RAssign this magic number 3 to a well-named constant, and use the constant instead.(Ú¯Ä†
+j
+squid:S109"TAssign this magic number 3.5 to a well-named constant, and use the constant instead.(ÏİŠ§
+o
+squid:S109"TAssign this magic number 2.5 to a well-named constant, and use the constant instead.(òç‰úøÿÿÿÿ
+h
+squid:S109"RAssign this magic number 3 to a well-named constant, and use the constant instead.(‘ÿòë
+Ksquid:S2221/"4Catch a list of specific exception subtypes instead.(”ı¾
+Gsquid:S1481#"0Remove this unused "updatedItem" local variable.(òĞÂ÷
+Vsquid:S1118":Add a private constructor to hide the implicit public one.(‘Ö«ìúÿÿÿÿ
+Qsquid:S2209H"5Change this instance-reference to a static reference.(Ê·ÊÄÿÿÿÿÿ
+hsquid:S001038"KSplit this 174 characters long line (which is greater than 120 authorized).(ô³çÑúÿÿÿÿ
+`squid:S22592"DA "NullPointerException" could be thrown; "writer" is nullable here.(ÄËªŸÿÿÿÿÿ
+<squid:S1166/"%Either log or rethrow this exception.(”ı¾
+<squid:S1166R"%Either log or rethrow this exception.(”ı¾
+<squid:S1166k"%Either log or rethrow this exception.(‹±ÃÆ
+<squid:S1166m"%Either log or rethrow this exception.(ï­£Ä
+<squid:S1166s"%Either log or rethrow this exception.(ï­£Ä
+\squid:S2147m"ECombine this catch with the one at line 107, which has the same body.(ï­£Ä
+?squid:S11480"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+?squid:S1148S"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+?squid:S1148l"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+?squid:S1148n"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+?squid:S1148t"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+‘squid:S1160"zRefactor this method to throw at most one checked exception instead of: java.io.IOException, java.io.FileNotFoundException(üŸ©¹
